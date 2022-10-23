@@ -36,6 +36,8 @@ public class Timer : MonoBehaviour
             SetTimerText();
             timerText.color = Color.red;
             enabled = false;
+
+            //end game??
         }
         
         
