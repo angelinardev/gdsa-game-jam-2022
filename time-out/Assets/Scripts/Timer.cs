@@ -8,9 +8,10 @@ public class Timer : MonoBehaviour
 {
    [Header("Component")]
    public TextMeshProUGUI timerText;
+  
 
     [Header("Timer Settings")]
-    public float currentTime;
+    public float currentTime = 10.0f;
     public bool countDown;
 
     [Header ("Limit Settings")]
@@ -28,20 +29,19 @@ public class Timer : MonoBehaviour
     void Update()
     {
        
-        
-        currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-        if (hasLimit && ((countDown && currentTime <= timerLimit) || (!countDown && currentTime >= timerLimit)))
+       if(currentTime > 0)
         {
-            currentTime = timerLimit;
-            SetTimerText();
-            timerText.color = Color.red;
-            enabled = false;
-
-            //end game??
+            currentTime -= Time.deltaTime / 60 ;
         }
-        
-        
-        SetTimerText(); 
+
+        double roundto2 = System.Math.Round(currentTime,0);
+        timerText.text = roundto2.ToString() + " Hrs";
+
+        if (currentTime < 0)
+        {
+            SetTimerText();
+            //End game
+        }
     }
   
     private void SetTimerText()
