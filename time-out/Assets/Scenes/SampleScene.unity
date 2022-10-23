@@ -3346,7 +3346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 1951963260}
   timerText: {fileID: 385020117}
-  gameTime: 60
+  gameTime: 10
   activate: 0
   onCooldown: 0
   otherActions:
@@ -3406,6 +3406,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 22259016}
+        m_TargetAssemblyTypeName: Status, Assembly-CSharp
+        m_MethodName: ChangeMotivation
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4399,6 +4411,7 @@ GameObject:
   - component: {fileID: 395018004}
   - component: {fileID: 395018006}
   - component: {fileID: 395018005}
+  - component: {fileID: 395018007}
   m_Layer: 5
   m_Name: Ry
   m_TagString: Untagged
@@ -4439,7 +4452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 312, y: -149}
+  m_AnchoredPosition: {x: 416, y: -149}
   m_SizeDelta: {x: -780.0825, y: -287.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395018005
@@ -4480,6 +4493,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395018003}
   m_CullTransparentMesh: 1
+--- !u!225 &395018007
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395018003}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &421361311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6511,6 +6536,7 @@ GameObject:
   - component: {fileID: 584889842}
   - component: {fileID: 584889844}
   - component: {fileID: 584889843}
+  - component: {fileID: 584889845}
   m_Layer: 5
   m_Name: Nate
   m_TagString: Untagged
@@ -6551,7 +6577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -401, y: -136}
+  m_AnchoredPosition: {x: -414, y: -100}
   m_SizeDelta: {x: -780.0825, y: -287.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584889843
@@ -6592,6 +6618,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584889841}
   m_CullTransparentMesh: 1
+--- !u!225 &584889845
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584889841}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &585383793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +7521,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 22259016}
+        m_TargetAssemblyTypeName: Status, Assembly-CSharp
+        m_MethodName: ChangeSleep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &661914975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7497,7 +7547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 562604026}
   timerText: {fileID: 282240853}
-  gameTime: 60
+  gameTime: 20
   activate: 0
   onCooldown: 0
   otherActions:
@@ -8286,6 +8336,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 22259016}
+        m_TargetAssemblyTypeName: Status, Assembly-CSharp
+        m_MethodName: ChangeFood
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &737829825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8300,7 +8362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 1526840129}
   timerText: {fileID: 1258432919}
-  gameTime: 60
+  gameTime: 10
   activate: 0
   onCooldown: 0
   otherActions:
@@ -8599,6 +8661,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1479176713}
+        m_TargetAssemblyTypeName: Progress, Assembly-CSharp
+        m_MethodName: IncreaseProgress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1360012005}
         m_TargetAssemblyTypeName: Status, Assembly-CSharp
         m_MethodName: ChangeBurnout
@@ -8643,18 +8717,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1479176713}
-        m_TargetAssemblyTypeName: Progress, Assembly-CSharp
-        m_MethodName: IncreaseProgress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -8730,6 +8792,7 @@ GameObject:
   - component: {fileID: 765559680}
   - component: {fileID: 765559682}
   - component: {fileID: 765559681}
+  - component: {fileID: 765559683}
   m_Layer: 5
   m_Name: Abdu
   m_TagString: Untagged
@@ -8746,7 +8809,7 @@ RectTransform:
   m_GameObject: {fileID: 765559679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1432, y: 1, z: 1}
+  m_LocalScale: {x: 0.89061, y: 0.77905, z: 0.77905}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1263180211}
@@ -8770,7 +8833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 937, y: -22}
+  m_AnchoredPosition: {x: -32, y: 32}
   m_SizeDelta: {x: -780.0825, y: -287.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765559681
@@ -8811,6 +8874,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765559679}
   m_CullTransparentMesh: 1
+--- !u!225 &765559683
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765559679}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &781290443
 GameObject:
   m_ObjectHideFlags: 0
@@ -10308,11 +10383,11 @@ RectTransform:
   m_Children:
   - {fileID: 1187129945}
   - {fileID: 1889438826}
-  - {fileID: 1289803678}
   - {fileID: 1707507002}
   - {fileID: 395018004}
   - {fileID: 584889842}
   - {fileID: 765559680}
+  - {fileID: 1289803678}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13152,6 +13227,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1479176713}
+        m_TargetAssemblyTypeName: Progress, Assembly-CSharp
+        m_MethodName: IncreaseProgress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1263180208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13166,7 +13253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 1734159498}
   timerText: {fileID: 1923909630}
-  gameTime: 5
+  gameTime: 20
   activate: 0
   onCooldown: 0
   otherActions:
@@ -13395,7 +13482,7 @@ RectTransform:
   m_GameObject: {fileID: 1289803677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.47955117, y: 0.23650439, z: 1}
+  m_LocalScale: {x: 0.41362727, y: 0.23650439, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 276770643}
@@ -13405,8 +13492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -198}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -33, y: -240}
+  m_SizeDelta: {x: -275.2385, y: -55.2229}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289803679
 MonoBehaviour:
@@ -15442,7 +15529,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1479176711}
-  - component: {fileID: 1479176710}
   - component: {fileID: 1479176712}
   - component: {fileID: 1479176713}
   m_Layer: 0
@@ -15452,18 +15538,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1479176710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479176709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9ffb9df82967014ca4e85ec20fa2a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1479176711
 Transform:
   m_ObjectHideFlags: 0
@@ -18031,6 +18105,7 @@ GameObject:
   - component: {fileID: 1707507002}
   - component: {fileID: 1707507004}
   - component: {fileID: 1707507003}
+  - component: {fileID: 1707507005}
   m_Layer: 5
   m_Name: Car
   m_TagString: Untagged
@@ -18112,6 +18187,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707507001}
   m_CullTransparentMesh: 1
+--- !u!225 &1707507005
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707507001}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &1734159496
 GameObject:
   m_ObjectHideFlags: 0
@@ -18382,7 +18469,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -19224,6 +19311,7 @@ GameObject:
   - component: {fileID: 1889438826}
   - component: {fileID: 1889438828}
   - component: {fileID: 1889438827}
+  - component: {fileID: 1889438829}
   m_Layer: 5
   m_Name: Angie
   m_TagString: Untagged
@@ -19305,6 +19393,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889438825}
   m_CullTransparentMesh: 1
+--- !u!225 &1889438829
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889438825}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &1893392957
 GameObject:
   m_ObjectHideFlags: 0

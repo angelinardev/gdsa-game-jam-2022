@@ -22,19 +22,22 @@ public class Status : MonoBehaviour
     void Update()
     {
         
-        if (burnout == 4 || food ==0 || sleep ==0 ||motivation ==0)
+        /* if (burnout == 4 || food ==0 || sleep ==0 ||motivation ==0)
         {
             //end game!
-        }
+        } */
     }
     public void ChangeBurnout(int n)
     {
         burnout += n;
-         if (burnout >=4)
+        if (burnout >4)
         {
+           //set end game
+           
+           
            burnout = 4;
         }
-        if (burnout <= 0)
+        if (burnout < 0)
         {
             burnout = 0;
         }
@@ -42,36 +45,39 @@ public class Status : MonoBehaviour
     public void ChangeFood(int n)
     {
         food += n;
-        if (food >=4)
+        if (food >4)
         {
             food = 4;
         }
-        if (food <= 0)
+        if (food < 0)
         {
+           //set end game
            food = 0;
         }
     }
     public void ChangeSleep(int n)
     {
         sleep += n;
-         if (sleep >=4)
+         if (sleep >4)
         {
             sleep = 4;
         }
-        if (sleep <= 0)
+        if (sleep < 0)
         {
+            //set end game
             sleep = 0;
         }
     }
     public void ChangeMotivation(int n)
     {
         motivation += n;
-         if (motivation >=4)
+         if (motivation >4)
         {
             motivation = 4;
         }
-        if (motivation <= 0)
+        if (motivation < 0)
         {
+            //set end game
             motivation = 0;
         }
     }

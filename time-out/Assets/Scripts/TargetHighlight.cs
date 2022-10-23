@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
 
@@ -19,7 +18,10 @@ public class TargetHighlight : MonoBehaviour
     {
         render= GetComponent<Renderer>();
         original = render.material.color;
-        uiGroup.SetActive(false);
+        //uiGroup.SetActive(false);
+        //uiGroup.GetComponent<Image>().enabled = false;
+        uiGroup.GetComponent<CanvasGroup>().alpha = 0;
+        
     }
 
     // Update is called once per frame
@@ -37,7 +39,17 @@ public class TargetHighlight : MonoBehaviour
     private void OnMouseDown() {
         
         //uiGroup.enabled  = !uiGroup.enabled;
-        uiGroup.SetActive(!uiGroup.activeSelf);
+        //uiGroup.SetActive(!uiGroup.activeSelf);
+
+        //hide but let scripts keep running
+        if (uiGroup.GetComponent<CanvasGroup>().alpha ==0)
+        {
+            uiGroup.GetComponent<CanvasGroup>().alpha = 1;
+        }
+        else{
+             uiGroup.GetComponent<CanvasGroup>().alpha = 0;
+        }
+        
     }
     private void OnMouseExit() {
         render.material.color = original;

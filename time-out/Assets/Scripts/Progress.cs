@@ -15,12 +15,14 @@ public class Progress : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         barTransform = progressBar.GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         barTransform.fillAmount = (float)progressPercent / 100f;
 
     }

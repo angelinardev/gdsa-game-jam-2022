@@ -21,6 +21,7 @@ public class TimerSlider : MonoBehaviour
 
     public float currentTime;
 
+    
 
     // Start is called before the first frame update
     void Start()
