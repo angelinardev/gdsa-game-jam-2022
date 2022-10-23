@@ -21,7 +21,7 @@ public class TimerSlider : MonoBehaviour
 
     public float currentTime;
 
-    
+    public GameObject person;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +56,9 @@ public class TimerSlider : MonoBehaviour
             if (otherActions[i].GetComponent<TimerSlider>().onCooldown)
                 activate = false;
         }
+        //cannot activate if this peron is busy
+        if (person.GetComponent<Status>().isBusy)
+            activate = false;
         timerSlider.enabled = true;
         
 
@@ -72,6 +75,7 @@ public class TimerSlider : MonoBehaviour
          timerText.text = currentTime.ToString("0.0");
         timerSlider.value = currentTime;
         onCooldown = true;
+        person.GetComponent<Status>().isBusy = true;
         
         if (currentTime <= 0)
         {
@@ -110,6 +114,7 @@ public class TimerSlider : MonoBehaviour
         activate = false;
         timerSlider.enabled = false;
         onCooldown = false;
+        person.GetComponent<Status>().isBusy = false;
         currentTime = gameTime;
     }
 
