@@ -12,10 +12,14 @@ public class Status : MonoBehaviour
     public int sleep;
     [Range(0,4)]
     public int motivation;
+    public bool isBusy = false;
+
+    ChangeScene change;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        change = GameObject.FindGameObjectWithTag("GameController").GetComponent<ChangeScene>();
     }
 
     // Update is called once per frame
@@ -33,6 +37,7 @@ public class Status : MonoBehaviour
         if (burnout >4)
         {
            //set end game
+           change.GameOver();
            
            
            burnout = 4;
@@ -52,6 +57,7 @@ public class Status : MonoBehaviour
         if (food < 0)
         {
            //set end game
+            change.GameOver();
            food = 0;
         }
     }
@@ -65,6 +71,7 @@ public class Status : MonoBehaviour
         if (sleep < 0)
         {
             //set end game
+             change.GameOver();
             sleep = 0;
         }
     }
@@ -78,7 +85,9 @@ public class Status : MonoBehaviour
         if (motivation < 0)
         {
             //set end game
+             change.GameOver();
             motivation = 0;
         }
     }
+    
 }
