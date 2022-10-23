@@ -40,7 +40,7 @@ public class TargetHighlight : MonoBehaviour
         uiGroup.SetActive(!uiGroup.activeSelf);
     }
     private void OnMouseExit() {
-        render.material.color =original;
+        render.material.color = original;
         selected = false;
     }
 }
