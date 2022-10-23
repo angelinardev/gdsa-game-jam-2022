@@ -19,24 +19,7 @@ public class ChangeScene : MonoBehaviour
 
     public void OnClick()
     {
-        //SceneManager.UnloadSceneAsync(sceneName:"SampleScene");
         SceneManager.LoadScene (sceneName:"SampleScene");
-       
-    }
-    public void GameOver()
-    {
-         SceneManager.LoadScene (sceneName:"GameOverMenu");
-    }
-    public void WinScreen()
-    {
-        SceneManager.LoadScene (sceneName:"WinMenu");
-    }
-    public void Exit()
-    {
-        Application.Quit();
-    }
-    public void MainMenu()
-    {
-        SceneManager.LoadScene (sceneName:"StartMenu");
+        //SceneManager.UnloadSceneAsync(sceneName:"StartMenu");
     }
 }

@@ -12,7 +12,6 @@ public class Progress : MonoBehaviour
 
     Image barTransform;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +24,6 @@ public class Progress : MonoBehaviour
     {
         
         barTransform.fillAmount = (float)progressPercent / 100f;
-
-        if (progressPercent >=100)
-        {
-            GetComponent<ChangeScene>().WinScreen();
-        }
 
     }
     public void IncreaseProgress(int n) {
